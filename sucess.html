@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+     <!--Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <!--Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Layout Mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Meta Tags Essenciais -->
@@ -12,49 +23,46 @@
      <!-- Favicon -->
       <link rel="icon" type="imag/svg+xml" href="./assets/img/favicon.svg">
 
+    <!--Link para o arquivo CSS-->
+      <link rel="stylesheet" href="./assets/css/styles.css">
+
     <title>Portfólio da Andressa</title>
 </head>
 <body>
-    <!-- Navbar - Menu -->
+   <!-- MENU -->
     <header class="flex menu_container">
         <article class="menu_content">
-            <div>
-                <a href="#">Portfólio</a>
+            <div id="titulo">
+                <a href="index.html">Portfolio</a>
             </div>
-
             <nav>
                 <ul class="flex menu_list">
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="index.html#hero">Início</a></li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#contact">Contato</a></li>
                 </ul>
             </nav>
-
         </article>
     </header>
 
-    <!-- Área Principal do Site -->
-     <main>
-           <section id="sucess" class="sucess_container">
-            <figure class="sucess_imag">
-                <img 
-                src="./assets/img/sucess.svg"
-                alt="Imagem de positivo."
-                >                
-            </figure>
+    <!-- MAIN -->
+    <main>
+        <section class="sucess_container">
+            <article class="sucess_content">
 
-            <article class="about_content">
-                <h2>E-mail enviado com sucesso!</h2>
-                <p>Obrigado por entrar em contato!</p>
-                <p>Logo mais retornarei a sua mensagem.</p>
-                <div>
-                    <a href="#hero" target="_blank" class="botao">Voltar para o Início</a>
-                </div>
+                <figure class="sucess_icon">
+                    <img src="./assets/img/sucess.svg" alt="Ilustração de desenvolvedor trabalhando"
+                        class="sucess_icon float-animation">
+                </figure>
+
+                <h1>E-mail enviado com Sucesso!</h1>
+                <h4>Obrigado por entrar em contato! <br /> Logo mais retornarei sua mensagem.</h4>
+
+                <a class="botao" href="index.html">Voltar para o Início</a>
+
             </article>
         </section>
-
-        
-     </main>
+    </main>
 
      <!-- Footer - Rodapé -->
       <footer>

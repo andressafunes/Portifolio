@@ -1,0 +1,316 @@
+/*Reset das configurações do Navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === VARIÁVEIS === */
+:root {
+    /* Cores */
+    --purple-50:  #f4eaff; 
+    --purple-100: #e9dcfa; 
+    --purple-200: #cdb3f0; 
+    --purple-300: #b186e5; 
+    --purple-400: #9460db; 
+    --purple-500: #6b36c8; 
+    --purple-600: #5b2ca0; 
+    --purple-700: #4c2177; 
+    --purple-800: #441f88; 
+    --purple-900: #2a0e4d; 
+    --gray-100: #f5f5f5;
+    --gray-200: #e8e8e8;
+    --gray-400: #505861;
+    --black-800: #171717;
+    --white: #ffffff;
+    --error: #e63946;
+ 
+    /* Sombras */
+    --shadow-sm: 0 0.25rem 0.5rem #0000000D;
+    --shadow-md: 0 0.25rem 0.75rem #6B36C84D;
+    --shadow-lg: 0 0.5rem 1.5rem #6B36C833;
+    --shadow-focus: 0 0 0 0.25rem #6B36C81A;
+}
+
+/* Estilos Globais */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--white);
+    color: var(--black-800);
+}
+
+main{
+    flex: 1;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+/* Formatação dos Botões */
+
+.botao, .botao-outline{
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.botao{
+    border: none;
+    color: var(--white);
+    background-color: var(--purple-500);
+}
+
+.botao:hover{
+    background-color: var(--purple-800);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-0.25rem);
+}
+
+.botao-outline{
+    border: 0.25rem solid var(--purple-500);
+    color: var(--purple-500);
+    background-color: transparent;
+}
+
+.botao-outline:hover{
+    background-color: var(--purple-500);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-0.25rem);
+}
+
+/* Menu */
+
+.menu_container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--purple-800);
+    border-bottom: 0.5rem solid var(--gray-200);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+}
+
+.menu_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70rem;
+    height: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+.menu_container a{
+    font-weight: 600;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.menu_container a:hover{
+    color: var(--purple-200);
+}
+
+#titulo a{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu_list a{
+    padding: 0.5rem;
+}
+
+/* Seções - Estilos Comuns */
+
+.hero_container, 
+.about_container, 
+.contact_container{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+    scroll-margin-top: 6rem;
+}
+
+/* Seção Hero */
+
+.hero_container{
+    display: flex;               
+    align-items: center;         
+    justify-content: space-between; 
+    gap: 2rem;    
+}
+
+.hero_image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustracao{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 2rem;
+}
+
+.hero_content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70rem;
+    padding: 2rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.hero_content h4{
+    color: var(--purple-500);
+}
+
+.hero_content h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero_buttons {
+  display: flex;
+  gap: 1rem; 
+}
+
+/* Seção About */
+
+.about_container{
+    display: flex;               
+    align-items: center;         
+    justify-content: space-between; 
+    background-color: var(--gray-200); 
+    border-radius: 1rem;   
+}
+
+.about_image{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about_image img {
+    width: 60%;          /* 🔹 define a largura da imagem */
+    height: 60%;         /* 🔹 mesma altura p/ virar um círculo perfeito */
+    border-radius: 50%;    /* 🔥 deixa a imagem circular */
+    object-fit: cover;     /* mantém proporção sem distorcer */
+    border: solid var(--purple-900);
+}
+
+.about_content{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70rem;
+    padding: 2rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.about_content h2{
+    font-size: 3rem;
+    color: var(--purple-900);
+    font-weight: 700;
+}
+
+.about_stats{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 2rem; 
+}
+
+.stat-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem; 
+}
+
+.stat-number{
+    color: var(--purple-600);
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.sucess_container{
+    display: flex;
+    justify-content: center;             
+    align-items: center;
+    padding: 2rem;         
+}
+
+.sucess_icon{
+    flex: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sucess_icon img {
+    width: 50%;          
+    height: 50%;         
+    border-radius: 50%;    
+    object-fit: cover;     
+    background-color: var(--purple-200);
+}
+
+.sucess_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70rem;
+    padding: 2rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.sucess_content h1{
+    text-align: center;
+    color: var(--purple-600);
+}
+
+.sucess_content h4{
+    text-align: center;    
+}

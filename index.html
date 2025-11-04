@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+    <!--Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+    <!--Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--Padrao de Caracteres-->
     <meta charset="UTF-8">
+
+    <!--Layout Mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Meta Tags Essenciais -->
+    <!--Meta Tags Essenciais -->
      <meta name="author" content="Andressa Funes">
      <meta name="description" content="Portfólio de Andressa Funes, desenvolvedora Full Stack - Conheça meus projetos e entre em contato.">
      <meta name="robots" content="index, follow">
 
-     <!-- Favicon -->
+     <!--Favicon -->
       <link rel="icon" type="imag/svg+xml" href="./assets/img/favicon.svg">
 
-    <title>Portfólio da Andressa</title>
+      <!--Link para o arquivo CSS-->
+       <link rel="stylesheet" href="./assets/css/styles.css">
+
+       <!-- TÍTULO DA PÁGINA -->
+    <title>Portfólio do Rafael</title>
+    
 </head>
+
 <body>
 
-    <!-- Navbar - Menu -->
+    <!-- MENU  -->
     <header class="flex menu_container">
         <article class="menu_content">
-            <div>
-                <a href="#">Portfólio</a>
+            <div id="titulo">
+                <a href="index.html">Portfólio</a>
             </div>
 
             <nav>
@@ -30,58 +47,74 @@
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
-
         </article>
     </header>
 
-    <!-- Área Principal do Site -->
-     <main>
+    <!-- MAIN -->
+    <main>
+
+        <!-- #HERO -->
         <section id="hero" class="hero_container">
+
+            <!-- BOAS VINDAS -->
             <article class="hero_content">
-                <h4>👋🏽 Olá, eu sou a Andressa!</h4>
-                <h1>Desenvolvedora Full Stack</h1>
-                <p>Transformo idéias em códigos e crio experiências digitais incriveis</p>
+                <h4>👋 Olá, eu sou a Andressa</h4>
+                <h1>Desenvolvedor Full Stack</h1>
+                <p>Transformo ideias em código e crio experiências digitais incríveis.</p>
                 <div class="hero_buttons">
                     <a href="#contact" class="botao">Entre em Contato</a>
                     <a href="#about" class="botao-outline">Saiba Mais...</a>
                 </div>
-            </article>  
-            <figure class="hero_imag">
-                <img 
-                src="./assets/img/dev_woman.svg"
-                alt="Ilustração com uma pessoas desenvolvedora escrevendo código."
-                class="ilustracao float-animation">
-            </figure>          
-        </section>
+            </article>
 
-        <section id="about" class="about_container">
-            <figure class="about_imag">
-                <img 
-                src="./assets/img/avatar_dev_woman.svg"
-                alt="Foto da pessoa desenvolvedora."
-                >                
+            <!-- IMAGEM COM ANIMAÇÃO -->
+            <figure class="hero_image">
+                <img
+                    src="./assets/img/dev_woman.svg"
+                    alt="Ilustração com uma pessoa desenvolvedora escrevendo código."
+                    class="ilustracao float-animation"
+                >
             </figure>
 
+        </section>
+
+        <!-- #ABOUT -->
+        <section id="about" class="about_container">
+
+            <!-- FOTO DO PERFIL -->
+            <figure class="about_image">
+                <img
+                    src="./assets/img/avatar_dev_woman.svg"
+                    alt="Foto da pessoa desenvolvedora."
+                >
+            </figure>
+
+            <!-- CONTEÚDO DO PERFIL -->
             <article class="about_content">
+
                 <h2>Sobre mim</h2>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.  Aenean aliquam molestie leo, vitae iaculis nisl. Manduma pindureta quium dia nois paga. Nulla id gravida magna, ut semper sapien. Quem num gosta di mé, boa gentis num é.</p>
-                <p>Mussum Ipsum, cacilds vidis litro abertis.  Aenean aliquam molestie leo, vitae iaculis nisl. Manduma pindureta quium dia nois paga. Nulla id gravida magna, ut semper sapien. Quem num gosta di mé, boa gentis num é.</p>
+                <p>Mussum Ipsum, cacilds vidis litro abertis.  Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Nulla id gravida magna, ut semper sapien.</p>
+                <p>Mussum Ipsum, cacilds vidis litro abertis.  Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Per aumento de cachacis, eu reclamis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Nulla id gravida magna, ut semper sapien.</p>
+
                 <div class="about_stats">
                     <a href="#" target="_blank" class="botao">Ver GitHub</a>
                     <div class="stat-item">
                         <p class="stat-number">100</p>
                         <p class="stat-label">Seguidores</p>
                     </div>
-                    <div class="stat-item">
+                     <div class="stat-item">
                         <p class="stat-number">50</p>
                         <p class="stat-label">Repositórios</p>
                     </div>
                 </div>
             </article>
+
         </section>
 
+        <!-- #CONTACT -->
         <section id="contact">
 
+            <!-- REDES SOCIAIS -->
             <article class="contact_info">
                 <h4>Entre em Contato</h4>
                 <p>Sinta-se à vontade para entrar em contato comigo!</p>
@@ -113,6 +146,7 @@
                 </div>
             </article>
 
+
             <form id="formulario">
 
                 <label for="nome">Nome</label>
@@ -137,7 +171,7 @@
         </section>
      </main>
 
-     <!-- Footer - Rodapé -->
+     <!--Footer - Rodapé -->
       <footer>
             Feito com ❤️ por Andressa Funes - 2025
       </footer>
