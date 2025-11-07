@@ -579,3 +579,99 @@ footer{
     }
 
 }
+
+/* === TELAS MÉDIAS - MONITORES E NOTEBOOKS (até 1120px) === */
+@media screen and (max-width: 1120px) {
+    .menu_content,
+    .hero_container,
+    .about_container,
+    .contact_container {
+        max-width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .menu_content {
+        padding: 0 2rem;
+    }
+}
+
+/* TABLETS (até 960px) */
+@media screen and (max-width: 960px) {
+   
+    /* Hero Section */
+    .hero_container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .hero_content h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .hero_buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* About Section */
+    .about_container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .about_container h2 {
+        text-align: center;
+    }
+
+    .about_image {
+        flex: 0 0 auto;
+    }
+
+    .about_image img {
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+
+    /* About Stats */
+    .about_stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .about_stats .botao {
+        width: 100%;
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    /* Wrapper para manter os stats lado a lado */
+    .stats-wrapper {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .stat-item {
+        flex: 0 0 auto;
+    }
+
+    /* Contact Section */
+    .contact_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .contact_info {
+        text-align: center;
+    }
+
+    .social_container {
+        justify-content: center;
+    }
+}
