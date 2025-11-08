@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <!--Servidores de Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- 
+
     <!--Fonte do Google - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -16,19 +17,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Meta Tags Essenciais -->
-     <meta name="author" content="Andressa Funes">
-     <meta name="description" content="Portfólio de Andressa Funes, desenvolvedora Full Stack - Conheça meus projetos e entre em contato.">
-     <meta name="robots" content="index, follow">
+    <meta name="author" content="Andressa Funes">
+    <meta name="description"
+        content="Portfólio de Andressa Funes, desenvolvedora Full Stack - Conheça meus projetos e entre em contato.">
+    <meta name="robots" content="index, follow">
 
-     <!--Favicon -->
-      <link rel="icon" type="imag/svg+xml" href="./assets/img/favicon.svg">
+    <!--Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
 
-      <!--Link para o arquivo CSS-->
-       <link rel="stylesheet" href="./assets/css/styles.css">
+    <!--Link para o arquivo CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-       <!-- TÍTULO DA PÁGINA -->
-    <title>Portfólio do Rafael</title>
-    
+    <!-- TÍTULO DA PÁGINA -->
+    <title>Portfólio do Andressa</title>
+
 </head>
 
 <body>
@@ -44,7 +46,9 @@
                 <ul class="flex menu_list">
                     <li><a href="#hero">Início</a></li>
                     <li><a href="#about">Sobre</a></li>
+                    <li><a href="#creations">Projetos</a></li>
                     <li><a href="#contact">Contato</a></li>
+
                 </ul>
             </nav>
         </article>
@@ -58,6 +62,8 @@
 
             <!-- BOAS VINDAS -->
             <article class="hero_content">
+
+
                 <h4>👋 Olá, eu sou a Andressa</h4>
                 <h1>Criadora de Experiências Digitais</h1>
                 <p>Transformo ideias em arte, código e emoção — porque tecnologia também pode ter alma..</p>
@@ -69,11 +75,9 @@
 
             <!-- IMAGEM COM ANIMAÇÃO -->
             <figure class="hero_image">
-                <img
-                    src="https://ik.imagekit.io/techbloom/Portfolio%20Chibi/188c76d1-3d0e-4308-bff9-674eb2d1fff0.jpg?updatedAt=1762458571825"
+                <img src="https://ik.imagekit.io/techbloom/Portfolio%20Chibi/188c76d1-3d0e-4308-bff9-674eb2d1fff0.jpg?updatedAt=1762458571825"
                     alt="Ilustração com uma pessoa desenvolvedora escrevendo código."
-                    class="ilustracao float-animation"
-                >
+                    class="ilustracao float-animation">
             </figure>
 
         </section>
@@ -81,8 +85,56 @@
         <!-- #ABOUT -->
         <section id="about" class="about_container">
 
-           
 
+        </section>
+
+        <!-- #CREATIONS -->
+        <section id="creations" class="creations_container">
+            <h2>Criações & Projetos</h2>
+            <p class="creations_intro">
+                Cada projeto é um pequeno universo onde transformo ideias em experiências digitais —
+                com código, cor e um toque de imaginação.
+            </p>
+
+            <div class="creations_grid">
+
+                <!-- Projeto 1: MidMove -->
+                <article class="creation_card">
+                    <img src="./assets/img/MindMovw.gif" alt="MidMove - monitoramento inteligente">
+                    <h3>MidMove</h3>
+                    <p>
+                        Aplicação Java com Spring Boot voltada ao bem-estar de pessoas neurodivergentes,
+                        promovendo equilíbrio e foco por meio de rotinas físicas leves e personalizáveis.
+                    </p>
+                    <a href="https://github.com/TechBloom-GrupoE/MindMove_backend.git" target="_blank"
+                        class="botao-outline">Ver no GitHub</a>
+                </article>
+
+                <!-- Projeto 2: Eternal Magic Book -->
+                <article class="creation_card">
+                    <img src="./assets/img/Eternal.png" alt="Eternal Magic Book - jogo desenvolvido por Andressa">
+                    <h3>Eternal Magic Book</h3>
+                    <p>
+                        Jogo de plataforma que ensina inglês de forma leve e envolvente, combinando fantasia,
+                        aprendizado e diversão através da metodologia de Aprendizagem Tangencial.
+                    </p>
+                    <a href="https://github.com/andressafunes/The-Eternal-Magic-Book.git" target="_blank"
+                        class="botao-outline">Ver no GitHub</a>
+                </article>
+
+                <!-- Projeto 3: Papelaria Criativa -->
+                <article class="creation_card">
+                    <img src="./assets/img/Logo A&J Chibi.png" alt="Papelaria criativa de Andressa Funes">
+                    <h3>Papelaria Criativa</h3>
+                    <p>
+                        Um espaço dedicado às minhas criações manuais — cadernos, bottons e caixinhas que unem arte e
+                        expressão pessoal.
+                    </p>
+                    <a href="galeria.html" target="_blank" class="botao-outline">Ver Galeria</a>
+                </article>
+
+
+            </div>
         </section>
 
         <!-- #CONTACT -->
@@ -94,28 +146,16 @@
                 <p>Sinta-se à vontade para entrar em contato comigo!</p>
                 <div class="social_container">
                     <a href="https://www.linkedin.com/in/andressa-funes/" target="_blank" class="social_icon">
-                        <img
-                            src="./assets/img/linkedin.svg"
-                            alt="Link para o Linkedin"
-                        >
+                        <img src="./assets/img/linkedin.svg" alt="Link para o Linkedin">
                     </a>
                     <a href="https://github.com/andressafunes" target="_blank" class="social_icon">
-                        <img
-                            src="./assets/img/github.svg"
-                            alt="Link para o GitHub"
-                        >
+                        <img src="./assets/img/github.svg" alt="Link para o GitHub">
                     </a>
                     <a href="https://www.instagram.com/andressafunes/" target="_blank" class="social_icon">
-                        <img
-                            src="./assets/img/instagram.svg"
-                            alt="Link para o Instagram"
-                        >
+                        <img src="./assets/img/instagram.svg" alt="Link para o Instagram">
                     </a>
                     <a href="https://www.facebook.com/andressa.funes/" target="_blank" class="social_icon">
-                        <img
-                            src="./assets/img/facebook.svg"
-                            alt="Link para o Facebook"
-                        >
+                        <img src="./assets/img/facebook.svg" alt="Link para o Facebook">
                     </a>
                 </div>
             </article>
@@ -137,24 +177,40 @@
                 <label for="assunto">Assunto</label>
                 <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
                 <span id="txtAssunto"></span>
-                
+
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui..."></textarea>
 
                 <button class="botao" type="submit">Enviar Mensagem</button>
 
             </form>
-            
-        </section>
-     </main>
 
-     <!--Footer - Rodapé -->
-      <footer>
-            Feito com ❤️ por Andressa Funes - 2025
-      </footer>
-      
+        </section>
+    </main>
+
+    <!--Footer - Rodapé -->
+    <footer>
+        Feito com ❤️ por Andressa Funes - 2025
+    </footer>
+
+    <!-- ALERTA DE SOM -->
+    <div class="audio-alert" id="audioAlert">
+        <h2>🔊 Esta página possui som</h2>
+        <p>Para uma experiência completa, clique em <strong>Play</strong> abaixo.</p>
+        <p>O som pode ser desabilitado a qualquer momento basta clicar 🔊 na página</p>
+        <button id="btnPlay">▶️ Play</button>
+    </div>
+
+    <!-- ÁUDIO -->
+    <audio id="musicaFundo" src="./assets/audio/Pixel.mp3" loop></audio>
+
+    <!-- BOTÃO FLUTUANTE -->
+    <button id="toggleSound" style="display: none;">🔊</button>
+
+
     <!-- Script JavaScript -->
-     <script src="./assets/JS/scripts.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 
 </body>
+
 </html>
